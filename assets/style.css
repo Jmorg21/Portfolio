@@ -1,0 +1,403 @@
+/* font-family: 'Corben', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Orelega One', cursive;  */
+
+:root {
+    --color1: #78A1BB;
+    --color2: #4C4B63;
+    --color3: #EBF5EE;
+    --color4: #ffffff;
+  } 
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: var(--color2);
+    background-color: var(--color4);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1e,;
+  }
+  
+  /* header  ----------------------------------*/
+  header {
+    height: 90px;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+    width: 100%;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--color4);
+  }
+  
+  header h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 36px;
+    color: var(--color3);
+    margin: 0 10px;
+  }
+  
+  header nav ul {
+    display: flex;
+    /* flex-wrap: wrap; */
+    list-style: none;
+  }
+  
+  header nav li a {
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 12;
+    color: #ffffff;
+    font: 'Barlow Semi Condensed', sans-serif;
+    align-items: center;
+  }
+  
+  header nav ul li a:hover {
+    color: var(--color1);
+  }
+  
+  .title {
+    width: 100;
+    height: 100px;
+    padding: 0;
+    margin: 0 .5px;
+    display: flex;
+    text-align: center;
+  }
+  
+  h2 {
+    display: flex;
+    align-items: center; 
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 28px;
+    color:var(--color2);
+    width: 170px;
+    text-align: right;
+  }
+  
+  
+  /* hero  ----------------------------------*/
+  .hero {
+    width: 100%;
+    height: 300px;
+    background-image: url("./images/typing.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 25%;
+  }
+  
+  /* about me  ----------------------------------*/
+  .about-me{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .about-me img {
+    margin-right: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 160px;
+    padding: 1em;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .about-me p {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  
+  /* my work ---------------------------------- */
+  .TBD {
+    background-color: var(--color3);
+    margin: 10px 5px;
+  }
+  
+  .my-work h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 10px 5px;
+    line-height: 1.3;
+    font-size: 18pt;
+    font-style: bold;
+    color: var(--color2);
+    text-align: left;
+  }
+  
+  .my-work img {
+    width: 90%;
+    height: 150px;
+    margin: 0;
+    opacity: .5;
+  }
+  
+  .my-work a:hover {
+    content: "";
+    opacity: .5;
+  } 
+  
+  /* resume ---------------------------------- */
+  .resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .resume h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 24px;
+    color: var(--color2);
+  }
+  
+  .resume h4 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    color: var(--color2);
+  }
+  
+  #resume ul {
+    line-height: 1.5;
+  }
+  
+  /* contact me ---------------------------------- */
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .contact-info {
+    display: inline;
+    padding: 10px 0;
+    margin: 5px 0px;
+    width: 840px;
+  }
+  
+  .contact-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .contact-info li {
+    padding: 5px 0;
+    font-size: 12;
+    color: var(--color2);
+    
+  }
+  
+  .contact-info a {
+    font-size: 12;
+    color: var(--color2);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+  
+  .contact-info a:hover {
+    color: var(--color1);
+  }
+  
+  .contact-info p, .contact-info a {
+    line-height: 1;
+    font-style: lighter;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  /* footer ---------------------------------- */
+  footer {
+    background-color:var(--color2);
+    width: 100%;
+    padding: 40px 35px;
+    margin: 5px;
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .flex-row {
+    display: flex;
+    width: 200px;
+  }
+  
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      position: relative;
+      display: block;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin: 0;
+    }
+  
+    h2 {
+      width: 160px;
+      margin-bottom: 10px;
+      justify-content: center;
+      text-align: right;
+    }
+  
+    .flex-row { /*to make headings centered*/
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  
+    header nav ul {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: center;
+      padding: 0;
+    }
+  
+    header nav ul li a {
+      font-size: 15px;
+      justify-content: space-between;
+    }
+  
+    .parent-for-resume {
+      justify-content: center;
+      margin-left: 10px;
+    }
+  
+    #resume h3, h4, ul, p {
+      text-align: left;
+    }
+  
+    .about-me-info img p a {
+      position: relative;
+      margin: 4px 0;
+      padding: 0;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+    
+    .about-me {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+  
+    header nav ul {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: center;
+      padding: 0;
+    }
+  
+    header nav ul li a {
+      font-size: 15px;
+    }
+  
+    h2 {
+      flex: 0 100;
+    }
+  
+    #about-me,
+    #my-work,
+    #resume,
+    #contact-me {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      margin: 4px 0;
+    }
+  
+    .parent4projects {
+      flex: 1;
+    }
+  
+    .resume-item h3, h4, ul, p {
+      text-align: left;
+    }
+  
+    .about-me-info img p a {
+      position: relative;
+      padding: 0;
+    }
+  
+    .about-me p {
+      flex: 100%;  
+    }
+  
+    .parent-for-all-projects {
+      display: block;
+      align-content: center;
+    }
+  
+    .big-project {
+      flex: 0;
+      justify-content: center;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .about-me-info img p a {
+      position: relative;
+      margin: 4px 0;
+      padding: 0;
+    }
+  
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  }
