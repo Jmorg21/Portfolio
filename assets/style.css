@@ -21,6 +21,10 @@ font-family: 'Orelega One', cursive;  */
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1e,;
   }
+
+  .body {
+      text-align: center;
+  }
   
   /* header  ----------------------------------*/
   header {
@@ -102,9 +106,13 @@ font-family: 'Orelega One', cursive;  */
     background-attachment: fixed;
     background-position: 25%;
   }
+
+  .container {
+    justify-content: center;
+  }
   
   /* about me  ----------------------------------*/
-  .about-me{
+  .about-me-content{
     width: 600px;
     height: 200px;
     display: flex;
@@ -115,7 +123,7 @@ font-family: 'Orelega One', cursive;  */
     right: 0;
   }
   
-  .about-me img {
+  .about-me-content img {
     margin-right: 15px;
     width: 150px;
     height: 150px;
@@ -125,6 +133,7 @@ font-family: 'Orelega One', cursive;  */
     top: 0;
     bottom: 0;
     right: 0;
+    align-items: center;
   }
   
   .about-me p {
@@ -133,13 +142,19 @@ font-family: 'Orelega One', cursive;  */
     margin: 0;
     display: block;
   }
-  
-  /* my work ---------------------------------- */
-  .TBD {
-    background-color: var(--color3);
-    margin: 10px 5px;
+
+  .title {
+      text-align: center;
   }
   
+  /* my work ---------------------------------- */
+  .project {
+    background-color: var(--color3);
+    margin: 10px 5px;
+    flex-direction: row;
+  }
+  
+
   .my-work h3 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     padding: 10px 5px;
@@ -167,6 +182,7 @@ font-family: 'Orelega One', cursive;  */
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
   }
   
   .resume h3 {
@@ -249,155 +265,4 @@ font-family: 'Orelega One', cursive;  */
   .flex-row {
     display: flex;
     width: 200px;
-  }
-  
-  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-  @media screen and (max-width: 980px) {
-    header {
-      padding-bottom: 0;
-      position: relative;
-      display: block;
-    }
-  
-    header h1 {
-      width: 100%;
-      text-align: center;
-      display: block;
-      margin: 0;
-    }
-  
-    h2 {
-      width: 160px;
-      margin-bottom: 10px;
-      justify-content: center;
-      text-align: right;
-    }
-  
-    .flex-row { /*to make headings centered*/
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-    }
-  
-    header nav ul {
-      margin-top: 10px;
-      width: 100%;
-      justify-content: center;
-      padding: 0;
-    }
-  
-    header nav ul li a {
-      font-size: 15px;
-      justify-content: space-between;
-    }
-  
-    .parent-for-resume {
-      justify-content: center;
-      margin-left: 10px;
-    }
-  
-    #resume h3, h4, ul, p {
-      text-align: left;
-    }
-  
-    .about-me-info img p a {
-      position: relative;
-      margin: 4px 0;
-      padding: 0;
-    }
-  
-    footer h2, footer div {
-      text-align: center;
-      width: 100%;
-    }
-    
-    .about-me {
-      text-align: center;
-      justify-content: center;
-    }
-  }
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    header {
-      padding-bottom: 0;
-      justify-content: center;
-    }
-  
-    header h1 {
-      width: 100%;
-      text-align: center;
-      display: block;
-    }
-  
-    header nav ul {
-      margin-top: 10px;
-      width: 100%;
-      justify-content: center;
-      padding: 0;
-    }
-  
-    header nav ul li a {
-      font-size: 15px;
-    }
-  
-    h2 {
-      flex: 0 100;
-    }
-  
-    #about-me,
-    #my-work,
-    #resume,
-    #contact-me {
-      display: block;
-      text-align: center;
-      justify-content: center;
-      margin: 4px 0;
-    }
-  
-    .parent4projects {
-      flex: 1;
-    }
-  
-    .resume-item h3, h4, ul, p {
-      text-align: left;
-    }
-  
-    .about-me-info img p a {
-      position: relative;
-      padding: 0;
-    }
-  
-    .about-me p {
-      flex: 100%;  
-    }
-  
-    .parent-for-all-projects {
-      display: block;
-      align-content: center;
-    }
-  
-    .big-project {
-      flex: 0;
-      justify-content: center;
-    }
-  }
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-    .about-me-info img p a {
-      position: relative;
-      margin: 4px 0;
-      padding: 0;
-    }
-  
-  
-    .contact-info {
-      text-align: center;
-    }
-  
-    .contact-info > * {
-      flex: 0 100%;
-    }
   }
